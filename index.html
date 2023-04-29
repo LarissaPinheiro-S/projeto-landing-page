@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F4Life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <img class="cabecalho-logo" src="./logo.jpg" alt="">
+        <nav class="cabecalho-menu">
+            <a class="menu-item" href="#">Alugar</a>
+            <a class="menu-item" href="#">Anuciar</a>
+            <a class="menu-item" href="#">Sobre</a>
+            <a class="menu-item" href="#">Entrar</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="pagina-principal">
+
+        <section class="section1">
+            <h1 class="section1-titulo-1">Histórias e pessoas formam <strong> um lar</strong>...</h1>
+            <p> <em>"Mudam-se os tempos, mudam-se as vontades, muda-se o ser, muda-se a confiança.<br>Todo o mundo é composto de mudanças..." </em></p>
+        </section>
+
+        <section class="section2">
+            <h2 class="section2-titulo-secundario">Fale com a gente!</h2>
+    
+            <form class="section2-form">
+                
+                <label for="nome"> Nome</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="sobrenome"> Sobrenome</label>
+                <input type="text" id="sobrenome">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <input id="password" placeholder="  senha"  onclick="escondeSenha (event)"/>
+
+                <input type="button" value="Enviar" onclick="enviaResposta ()" class="button" >
+
+            </form>
+        </section>
+
+        </div>
+
+        <article class="pagina-secundaria">
+            <section class="pagina-secundaria-texto">
+                <h2 class="pagina-secundaria-h2">Por que usar a F4Life?</h2>
+                <p class="pagina-secundaria-p">Tá esperando o que, mana?</p>
+                <p class="pagina-secundaria-p">Vem conferir nossos serviços e descubra porque todo mundo está usando!</p>
+            </section>
+
+            <div class="pagina-secundaria-services-fotos"> 
+
+            <div class="pagina-secundaria-services">
+            <section class="pagina-secundaria-item-1">
+                
+                <div class="pagina-secundaria-item-1-texto">
+                <h3> Tudo digital!</h3>
+                <p>Selecione a casa, agende a visita, faça o tour virtual e assine o contrato digitalmente sem precisar sair de casa! </p>
+                </div>
+            </section>
+
+            <section class="pagina-secundaria-item-2">
+                <div class="pagina-secundaria-item-2-texto">
+                <h3>Sem burocracia!</h3>
+                <p>Você e seus amigos recebem assessoria imobiliária completa de um time de advogados super experientes. Tudo de forma prática e com as melhores taxas!</p>
+                </div>
+            </section>
+
+            <section class="pagina-secundaria-item-3">
+                <div class="pagina-secundaria-item-3-texto">
+                <h3>Somos Pet friendly!</h3>
+                <p>Para nós, todos os integrantes de uma casa merecem o mesmo respeito. Assim, fazemos questão de que você adiquira o melhor ambiente para seu bichinho!</p>
+                </div>
+            </section>
+        </div>
+    </div>
+        </article>
+
+        <article>
+            <h4>Mediterrâneo, clássico, moderno, eclético... Qual o seu estilo?</h4>
+        </article>
+
+        <section class="carossel">
+        <figure class="carossel-fig-inicial">
+            <img src="./foto1.jpg" alt="" id="img1" class="imagens-carossel">
+        </figure>  
+         <figure class="figuras-secundarias">
+            <img src="./foto1.jpg" alt="" id="img1.1"class="img1-carossel"onclick="adicionaFoto1(event)">
+            <img src="./foto2.jpg" alt="" id="img2" class="img2-carossel" onclick="adicionaFoto2(event)">
+            <img src="./foto3.jpg" alt="" id="img3" class="img3-carossel" onclick="adicionaFoto3(event)">
+            <img src="./foto4.jpg" alt="" id="img4" class="img4-carossel" onclick="adicionaFoto4(event)">
+            <img src="./foto5.jpg" alt="" id="img5" class="img5-carossel" onclick="adicionaFoto5(event)">
+            <img src="./foto6.jpg" alt="" id="img6" class="img6-carossel" onclick="adicionaFoto6(event)">
+        </figure> 
+        </section>
+
+        <article class="ultimo-p">
+            <p> <strong> Preocupe-se apenas em morar bem!</strong></p>
+        </article>
+        
+        <figure class="ultimo-img">
+        </figure>
+
+    </main>
+
+    <footer>
+        <section>
+            <div>
+        <li class="sobre">
+            <ul> <strong>Sobre nós</strong> </ul>
+            <ul><a href="">> Conheça F4Life</a></ul>
+            <ul><a href="">> Segurança</a></ul>
+            <ul><a href="">> Regiões atendidas</a></ul>
+            <ul><a href="">> Política de privacidade</a></ul>
+            <ul><a href="">> Guia de ética e conduta</a></ul>
+            <ul><a href="">> Corretores parceiros</a></ul>
+            <ul><a href="">> Central de ajuda</a></ul>
+        </li>
+
+        <li>
+            <ul> <strong>Trabalhe com a gente</strong> </ul>
+            <ul><a href="">> Carriras</a></ul>
+            <ul><a href="">> Corretagem</a></ul>
+            <ul><a href="">> Fotografia</a></ul>
+            <ul><a href="">> Vistorias</a></ul>
+            <ul><a href="">> Parceria de reparos</a></ul>
+            <ul><a href="">> Parceria com portarias</a></ul>
+        </li>
+
+        <li>
+    
+            <ul><a href="">> <strong>Política de privacidade</strong> </a></ul>
+            <ul><a href="">>  <strong>Termos e condições de uso</strong></a></ul>
+            <ul><a href="">>  <strong>Política de cookies</strong></a></ul>
+            <ul><a href="">>  <strong>Manual do usuário</strong></a></ul>
+        </li>
+</div>
+        <figure>
+            <a href="https://web.whatsapp.com/"target="_blank"><img src="./pngtree-whatsapp.png" alt="">  </a>
+            <a href="https://pt-br.facebook.com/" target="_blank"><img src="./Facebook_logo_(square).png" alt=""></a>
+            <a href="https://www.instagram.com/" target="_blank"> <img src="./pngtree-instagram.png" alt=""></a>
+        </figure>
+
+    </section>
+
+    </footer>
+<script src="script.js" defer></script> 
+</body>
+
+</html>
